@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Cmaking') {
       steps {
-        sh 'cmake'
+        sh 'cd build'
+        sh 'cmake ..'
       }
     }
 
